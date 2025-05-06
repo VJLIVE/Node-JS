@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #988c8c;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #988c8c;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="Reset">
+        <h1>Student Registration Form</h1>
+        <label>Firstname:</label>
+        <input type="text" name="firstname" size="30" /><br>
+        <label>Middlename:</label>
+        <input type="text" name="middlename" size="30" /><br>
+        <label>Lastname:</label>
+        <input type="text" name="lastname" size="30" /><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <br><br>
+        <label>Phone:</label>
+        <input type="text" name="country code" value="+91" size="2" />
+        <input type="text" name="phone" size="10" /><br><br>
+        <label>Address:</label><br>
+        <textarea cols="80" rows="5" name="address"></textarea><br><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="button" value="Reset" onClick="fun()" />
+        <script>
+            function fun() {
+                document.getElementById("Reset").reset();
+            }
+        </script>
+    </form>
+</body>
+
+</html>

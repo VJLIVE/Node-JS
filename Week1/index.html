@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .catalog {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .cart {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .product-card:hover {
+            background-color: #e5e5e5;
+        }
+
+        .cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .cart-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./Registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="catalog">
+            <h2>Catalog</h2>
+            <div class="product-card">
+                <h3>Product 1</h3>
+                <p>$20</p>
+                <button onclick="addToCart(20)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 2</h3>
+                <p>$30</p>
+                <button onclick="addToCart(30)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 3</h3>
+                <p>$25</p>
+                <button onclick="addToCart(25)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul class="cart-items" id="cartItems">
+            </ul>
+            <p>Total Cost: <span id="totalCost">$0</span></p>
+        </div>
+    </div>
+    <script>
+        let cartTotal = 0;
+        function addToCart(price) {
+            cartTotal += price;
+            document.getElementById('totalCost').textContent =
+                `$${cartTotal}`;
+        }
+    </script>
+</body>
+
+</html>

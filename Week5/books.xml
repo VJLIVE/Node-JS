@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<!DOCTYPE bookstab SYSTEM "books.dtd">
+<books>
+<book>
+<title>Programming the World Wide Web</title>
+<author>Robert W. Sebesta</author>
+<isbn>1234-5678</isbn>
+<publisher>Tata McGraw-Hill</publisher>
+<edition>Seventh</edition>
+<price>300</price>
+</book>
+<book>
+<title>Web Technologies</title>
+<author>Uttam K Roy</author>
+<isbn>2345-1234</isbn>
+<publisher>Oxford University Press</publisher>
+<edition>First</edition>
+<price>150</price>
+</book>
+<book>
+<title>The Complete Reference PHP</title>
+<author>Steven Holzner</author>
+<isbn>4567-8790</isbn>
+<publisher>Tata McGraw-Hill</publisher>
+<edition>Second</edition>
+<price>500</price>
+</book>
+</books>

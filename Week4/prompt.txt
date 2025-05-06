@@ -1,0 +1,120 @@
+Program 4: Develop a java stand alone application that connects with the
+database (Oracle / mySql) and perform the CRUD operation on the
+database tables.
+Db connection:
+import java.sql.\*;
+public class Connect
+{
+public static void main(String args\[])
+{
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+// Establishing Connection
+Connection con =
+DriverManager.getConnection("jdbc\:mysql://localhost:3306/mysql","root","KS
+\_padma");
+if (con != null)
+System.out.println("Connected");
+else
+System.out.println("Not Connected");
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+
+Insertion:
+import java.sql.\*;
+public class insert
+{
+public static void main(String args\[])
+{
+String id = "id3";
+String pwd = "pwd3";
+String fullname = "Keerthipriya";
+String email = "gnits.org";
+try
+{
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection con =
+DriverManager.getConnection("jdbc\:mysql://localhost:3306/mysql","root","KS\_padma");
+Statement stmt = con.createStatement();
+// Inserting data in database
+String q1 = "insert into userid values('" +id+ "', '" +pwd+ "', '" +fullname+ "', '" +email+ "')";
+int x = stmt.executeUpdate(q1); if (x > 0)
+System.out.println("Successfully Inserted"); else
+System.out.println("Insert Failed");
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+
+Updation:
+import java.sql.\*;
+public class update
+{
+public static void main(String args\[])
+{
+String id = "id1"; String pwd = "newpwd";
+String newPwd = "pwd1";
+try
+{
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection con =
+DriverManager.getConnection("jdbc\:mysql://localhost:3306/mysql","root","KS
+\_padma");
+Statement stmt = con.createStatement();
+// Updating database
+String q1 = "UPDATE userid set pwd = '" + newPwd + "' WHERE id = '" +id+
+"' AND pwd = '" + pwd + "'";
+int x = stmt.executeUpdate(q1);
+if (x > 0)
+System.out.println("Password Successfully Updated"); else
+System.out.println("ERROR OCCURRED :(");
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+
+Deletion:
+import java.sql.\*;
+public class delete
+{
+public static void main(String args\[])
+{
+String id = "id2"; String pwd = "123hp";
+try
+{
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection con =
+DriverManager.getConnection("jdbc\:mysql://localhost:3306/mysql","root","KS
+\_padma");
+Statement stmt = con.createStatement();
+// Deleting from database
+String q1 = "DELETE from userid WHERE id = '" + id + "' AND pwd = '" +
+pwd + "'";
+int x = stmt.executeUpdate(q1); if (x > 0)
+System.out.println("One User Successfully Deleted");
+else
+System.out.println("ERROR OCCURRED :(");
+
+con.close();
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
