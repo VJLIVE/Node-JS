@@ -3,8 +3,8 @@ import java.sql.*;
 public class Update {
     public static void main(String args[]) {
         String id = "23911A1225";
-        String pwd = "T@nuja";
-        String newPwd = "Vers";
+        String pwd = "Vers";
+        String newPwd = "Vers1";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "root", "root");
