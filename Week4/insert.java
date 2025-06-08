@@ -4,7 +4,7 @@ public class insert
 public static void main(String args[])
 {
 String id = "23911A1225"; 
-String pwd = "T@nuja";
+String pwd = "Vers";
 String fullname = "Vijay Guttula"; 
 String email = "@vjit.ac.in";
 try
