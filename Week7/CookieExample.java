@@ -1,11 +1,7 @@
-import jakarta.servlet.ServletException;
+import java.io.*;
+import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
-import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.*;
 
 /**
  * Servlet implementation class CookieExample
