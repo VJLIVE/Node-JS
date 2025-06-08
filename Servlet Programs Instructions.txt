@@ -1,0 +1,2 @@
+1) Install Eclipse Studio, Java JDK
+2) Install Apache Tomcat server
