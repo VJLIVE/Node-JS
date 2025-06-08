@@ -3,7 +3,6 @@ import java.util.*;
 import jakarta.servlet.annotation.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import java.io.IOException;
 
 /**
  * Servlet implementation class SessionExample
