@@ -1,0 +1,42 @@
+1) Clone the GitHub repo
+2) Install the softwares needed - MySQL Workbench, MySQL Server, MySQL Command Client Tool, Java JDK, JDBC Connector jar file(already file included in repo)
+Links:
+  - MySQL - https://dev.mysql.com/downloads/installer/
+  - JDBC - https://dev.mysql.com/downloads/connector/j/
+3) Open MySQL Workbench,
+Under “MySQL Connections”, click the “+” icon.
+(if image not visible, it's the + near "MySQL Connections")
+Fill in:
+
+Connection Name: Local MySQL
+Hostname: localhost
+Port: 3306
+Username: root
+Password: Click “Store in Vault” → enter KS_padma
+Click Test Connection.
+If successful, click OK.
+4) Open the connection and execute the queries
+create database jdbc;
+use jdbc;
+CREATE TABLE userid (
+    id VARCHAR(20),
+    pwd VARCHAR(20),
+    fullname VARCHAR(50),
+    email VARCHAR(50)
+);
+5) Open terminal in the folder where the java files are stored.
+6) For connection:
+   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect.java
+   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect
+   
+   For Insertion:
+   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert.java
+   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert
+
+   For Updation:
+   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update.java
+   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update
+
+   For Deletion:
+   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete.java
+   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete
