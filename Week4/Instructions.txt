@@ -26,17 +26,17 @@ CREATE TABLE userid (
 );
 5) Open terminal in the folder where the java files are stored.
 6) For connection:
-   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect.java
-   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect
+   - javac -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect.java
+   - java -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Connect
    
    For Insertion:
-   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert.java
-   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert
+   - javac -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert.java
+   - java -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' insert
 
    For Updation:
-   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update.java
-   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update
+   - javac -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update.java
+   - java -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Update
 
    For Deletion:
-   - javac -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete.java
-   - java -cp '.;C:\Users\vijay\Downloads\JDBC CONNECTORS\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete
+   - javac -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete.java
+   - java -cp '.;<Path_to_the_folder>\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar' Delete

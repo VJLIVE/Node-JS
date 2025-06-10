@@ -3,7 +3,7 @@ public class Delete
 {
 public static void main(String args[])
 {
-String id = "23911A1225"; String pwd = "Vers";
+String id = "23911A1225"; String pwd = "Version";
  try
 {
 Class.forName("com.mysql.cj.jdbc.Driver"); 
